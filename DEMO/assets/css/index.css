@@ -1,6 +1,6 @@
 <style>
     @font-face {
-        font-family: 'SetoFont';
+        font-family: 'setofont';
         src: url(../fonts/setofont.woff) format("woff"),
              url(../fonts/setofont.ttf) format("truetype"),
              url(../fonts/setofont.eot) format("embedded-opentype");
@@ -15,7 +15,7 @@
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
-        font-family: "SetoFont"
+        font-family: "setofont"
     }
     .container{
     	background-color: #FFFFFF;
