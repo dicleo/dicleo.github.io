@@ -1,0 +1,42 @@
+<style>
+    @font-face {
+        font-family: 'SetoFont';
+        src: url('../fonts/setofont.woff') format("woff"),
+             url('../fonts/setofont.ttf') format("truetype"),
+             url('../fonts/setofont.eot') format("embedded-opentype")
+             url('../fonts/setofont-ex.woff') format("woff"),
+             url('../fonts/setofont-ex.ttf') format("truetype"),
+             url('../fonts/setofont-ex.eot') format("embedded-opentype");
+    }
+    html {
+        height: 100%;
+    }
+
+    body {
+        background-color: #FCFAF2;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        font-family: "SetoFont"
+    }
+    .container{
+    	background-color: #FFFFFF;
+    }
+	.BgColor{
+		background-color: #5DAC81;
+	}
+	.navBgColor{
+		background-color: #00896C;
+	}
+
+	.pic{overflow:hidden;}
+	.pic img{transform:scale(1,1);transition: all 1s ease-out;}
+	.pic img:hover{
+		transform:scale(1.2,1.2);
+	}
+	.hw{
+		width: 350px;
+		height: 300px;
+	}
+</style>
