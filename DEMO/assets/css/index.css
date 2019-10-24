@@ -1,9 +1,7 @@
 <style>
     @font-face {
         font-family: "setofont";
-        src:url(../fonts/setofont.ttf) format("truetype"), 
-            url(../fonts/setofont.woff) format("woff"),
-            url(../fonts/setofont.eot) format("embedded-opentype");
+        src:url(../fonts/setofont.ttf) format("truetype");
     }
     html {
         height: 100%;
