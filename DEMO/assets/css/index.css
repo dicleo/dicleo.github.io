@@ -10,7 +10,7 @@
     }
 
     body {
-        background-color: #FCFAF2;
+        background-color:#A7D2CB;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
@@ -18,13 +18,13 @@
         font-family: "setofont","微軟正黑體","Microsoft JhengHei";
     }
     .container{
-    	background-color: #FFFFFF;
+    	background-color: #e2d9d9;
     }
 	.BgColor{
-		background-color: #5DAC81;
+		background-color: #F2D388;
 	}
 	.navBgColor{
-		background-color: #00896C;
+		background-color: #C98474;
 	}
 
 	.pic{overflow:hidden;}
