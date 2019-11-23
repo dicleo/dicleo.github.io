@@ -9,49 +9,144 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-	<style>
+    <style>
         body{
-            font-family: 微軟正黑體;
+            font-family:"微軟正黑體","Microsoft JhengHei";
             margin:0px;
             padding:0px;
-            background: url(img/1.jpg) center center fixed no-repeat;
+            background: url(../img/1.jpg) center center fixed no-repeat;
             background-size: cover;
-        }      
+        }
         .navBgColor{
             background-color: #86A697;
         }
         .navimg{
             height: 75px;
             max-width: 75px;
+            align-items: center;
         }
         .footerbgcolor{
             background-color: #86A697;
             text-align: center;
-            font-style: ;
+            color:white;
         }
         .myimg{
+            margin: 20px;
             height: 400px;
             max-width: 400px;
             border-radius: 30px;
         }
-        table{
+        
+        .table{
             border: 5px solid;
             border-color: cadetblue;
             border-radius: 20px;
         }
-        td{
-            padding: 20px;
-        }
         .pd{
-            padding: 30px;
+            padding: 50px;
         }
         .bdset{
-            border-right: 5px solid;
-            border-right-style: dashed;
-            border-right-color:darkcyan;
+            border-left: 5px solid;
+            border-left-style: dashed;
+            border-left-color:darkcyan;
         }
+        .icon{
+            height: 20px;
+            max-width: 20px;
+        }
+        /* 滑鼠移過去放大 設定 */
+        .pic{overflow:hidden;}
+        .pic img{transform:scale(1,1);transition: all 1s ease-out;}
+        .pic img:hover{
+            transform:scale(1.2,1.2);
+        }
+
+        /* 滑鼠移過去有圖片解釋 設定 */
+        .card{
+            /* 設定父親定位點 */
+            background: none;
+            border: none;
+            position: relative;
+        }
+        .info{
+          opacity: 0;
+          position: absolute;
+          background-color: rgba(0,0,0,.3);
+          width: 125px;
+          height: 125px;
+          text-align: center;
+          padding-top: 40px;
+        }
+        .info:hover{
+          -webkit-transition: 500ms;
+          opacity: 1;
+        }
+
+        /*横向时间轴*/
+        .timeline {
+          margin: 50px 0;
+          list-style-type: none;
+          display: flex;
+          padding: 0;
+          text-align: center;
+        }
+        .timeline li {
+          transition: all 200ms ease-in;
+        }
+        .timestamp {
+          width: 200px;
+          margin-bottom: 20px;
+          padding: 0px 40px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-weight: 100; 
+        }
+        .status {
+          padding: 0px 40px;
+          display: flex;
+          justify-content: center;
+          border-top: 4px solid #86A697;
+          position: relative;
+          transition: all 200ms ease-in ;
+        }
+          
+        .status span {
+          font-weight: 600;
+          padding-top: 20px;
+        }
+        .status span:before {
+          content: '';
+          width: 25px;
+          height: 25px;
+          background-color: #e8eeff;
+          border-radius: 25px;
+          border: 4px solid #86A697;
+          position: absolute;
+          top: -15px;
+          left: 42%;
+          transition: all 200ms ease-in;
+        }
+        .swiper-control {
+          text-align: right;
+        }
+
+        .swiper-container {
+          width: 100%;
+          height: 250px;
+          margin: 50px 0;
+          overflow: hidden;
+          padding: 0 20px 30px 20px;
+        }
+        .swiper-slide {
+          width: 200px;
+          text-align: center;
+          font-size: 18px;
+        }
+
     </style>
+
+
 </head>
 <body>
 	<header>
@@ -82,29 +177,87 @@
     </section>
     <section>
         <div class="container-flied pd">
-            <table class="table-responsive">
-                <tr>
-                    <td><img src="img/061.jpg" class="img-fluid myimg"></td>
-                    <td class="bdset">
-                        <h4 class="text-md-left">姓名：陳映彤</h3>
-                        <h4 class="text-md-left">系級：資管二甲</h3>
-                        <h4 class="text-md-left">興趣：遊戲、閱讀、貓咪</h3>
-                        <h4 class="text-md-left">大學四年期許：增強程式能力，考取相關證照</h3>
-                    </td>
-                    <td>
-                        <aside>
-                            <h5>信箱:dicleo0727@gmail.com</h5>
-                            <h5>電話:0937-311-296</h5>
-                            <h5>地址:新北市土城區日新街2號</h5>
-                        </aside>
-                    </td>
-                    <td>
-                        <img src="img/cat1.png" class="img-fluid" style="vertical-align:bottom" height="100" width="300">
-                    </td>
-                </tr>
-            </table>
+            <div class="row table no-gutters">
+                 <div class="col-3">
+                    <img src="img/061.jpg" class="img-fluid myimg img-thumbnail">
+                </div>
+                <div class="col-4 align-self-center">
+                    <h4 class="text-md-left" >姓名：陳映彤</h4><br>
+                    <h4 class="text-md-left">系級：資管二甲</h4><br>
+                    <h4 class="text-md-left">興趣：<img src="img/game.png" class="img-fluid icon"> 遊戲、<img src="img/read.png" class="img-fluid icon"> 閱讀、<img src="img/caticon.png" class="img-fluid icon"> 貓咪</h4><br>
+                    <h4 class="text-md-left">大學四年期許：增強程式能力，考取相關證照</h4><br>
+                </div>
+                <div class="col-1 bdset">
+                    <img src="img/cat2.png" class="img-fluid" width="200" height="200" style="position: relative; top: 300px">
+                </div>
+                <div class="col-3 align-self-center">
+                    <aside>
+                        <h4>信箱：dicleo0727@gmail.com</h4><br>
+                        <h4>電話：0937-311-296</h4><br>
+                        <h4>地址：中原大學信實宿舍</h4><br>
+                    </aside>
+                </div>
+                <div class="col-1 align-self-center">
+                    <a href="https://www.facebook.com/zoe.chen.727" target="_blank" name="aboutme"><img src="img/fb.png" class="img-fluid navimg"></a><br><br>
+                    <a href="https://www.instagram.com/dicleo727/?hl=zh-tw" target="_blank"><img src="img/ig.png" class="img-fluid navimg"></a><br><br>
+                    <a href="https://github.com/dicleo" target="_blank"><img src="img/github.png" class="img-fluid navimg"></a><br><br>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section>
+        <div class="container-flied pd">
+          <div class="row table no-gutters">
+          <div class="col-sm">
+              
+          </div>
+            <div class="col-sm">
+                <div class="swiper-wrapper timeline">
+                  <div class="swiper-slide">
+                    <div class="timestamp">
+                      <img src="img/陳映彤.png" class="img-fluid navimg">
+                    </div>
+                    <div class="status">
+                      <span><h4>樂利國小</h4></span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="timestamp">
+                      <img src="img/陳映彤.png" class="img-fluid navimg">
+                    </div>
+                    <div class="status">
+                      <span><h4>中正國中</h4></span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="timestamp">
+                      <img src="img/陳映彤.png" class="img-fluid navimg">
+                    </div>
+                    <div class="status">
+                      <span><h4>光仁高中</h4></span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="timestamp">
+                      <img src="img/陳映彤.png" class="img-fluid navimg">
+                    </div>
+                    <div class="status">
+                      <span><h4>中原大學</h4></span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            <div class="col-sm">
+              
+            </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
     <section>
         <div class="container-flied pt-4 pb-4 navBgColor" style="text-align: center; color: white;"><h3>目標:經濟獨立後，養一隻貓！</h3></div>
         <br>
@@ -112,7 +265,7 @@
 
 	<footer>
 		<div class="container-flied footerbgcolor pt-3 pb-2" >
-            @2019陳映彤
+            <h5>@2019陳映彤</h5>
         </div>
 	</footer>
 
@@ -121,5 +274,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    
 </body>
 </html>
