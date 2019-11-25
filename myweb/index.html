@@ -1,159 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>個人網站</title>
+  <title>個人網站</title>
+  
 	<!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <style>
-        body{
-            font-family:"微軟正黑體","Microsoft JhengHei";
-            margin:0px;
-            padding:0px;
-            background: url(../img/1.jpg) center center fixed no-repeat;
-            background-size: cover;
-        }
-        .navBgColor{
-            background-color: #86A697;
-        }
-        .navimg{
-            height: 75px;
-            max-width: 75px;
-            align-items: center;
-        }
-        .footerbgcolor{
-            background-color: #86A697;
-            text-align: center;
-            color:white;
-        }
-        .myimg{
-            margin: 20px;
-            height: 400px;
-            max-width: 400px;
-            border-radius: 30px;
-        }
-        
-        .table{
-            border: 5px solid;
-            border-color: cadetblue;
-            border-radius: 20px;
-        }
-        .pd{
-            padding: 50px;
-        }
-        .bdset{
-            border-left: 5px solid;
-            border-left-style: dashed;
-            border-left-color:darkcyan;
-        }
-        .icon{
-            height: 20px;
-            max-width: 20px;
-        }
-        /* 滑鼠移過去放大 設定 */
-        .pic{overflow:hidden;}
-        .pic img{transform:scale(1,1);transition: all 1s ease-out;}
-        .pic img:hover{
-            transform:scale(1.2,1.2);
-        }
-
-        /* 滑鼠移過去有圖片解釋 設定 */
-        .card{
-            /* 設定父親定位點 */
-            background: none;
-            border: none;
-            position: relative;
-        }
-        .info{
-          opacity: 0;
-          position: absolute;
-          background-color: rgba(0,0,0,.3);
-          width: 125px;
-          height: 125px;
-          text-align: center;
-          padding-top: 40px;
-        }
-        .info:hover{
-          -webkit-transition: 500ms;
-          opacity: 1;
-        }
-
-        /*横向时间轴*/
-        .timeline {
-          margin: 50px 0;
-          list-style-type: none;
-          display: flex;
-          padding: 0;
-          text-align: center;
-        }
-        .timeline li {
-          transition: all 200ms ease-in;
-        }
-        .timestamp {
-          width: 200px;
-          margin-bottom: 20px;
-          padding: 0px 40px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          font-weight: 100; 
-        }
-        .status {
-          padding: 0px 40px;
-          display: flex;
-          justify-content: center;
-          border-top: 4px solid #86A697;
-          position: relative;
-          transition: all 200ms ease-in ;
-        }
-          
-        .status span {
-          font-weight: 600;
-          padding-top: 20px;
-        }
-        .status span:before {
-          content: '';
-          width: 25px;
-          height: 25px;
-          background-color: #e8eeff;
-          border-radius: 25px;
-          border: 4px solid #86A697;
-          position: absolute;
-          top: -15px;
-          left: 42%;
-          transition: all 200ms ease-in;
-        }
-        .swiper-control {
-          text-align: right;
-        }
-
-        .swiper-container {
-          width: 100%;
-          height: 250px;
-          margin: 50px 0;
-          overflow: hidden;
-          padding: 0 20px 30px 20px;
-        }
-        .swiper-slide {
-          width: 200px;
-          text-align: center;
-          font-size: 18px;
-        }
-
-    </style>
-
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"><link rel="stylesheet" href="assets/index.css">
 
 </head>
-<body>
-	<header>
+
+<body background="img/background.jpg">
+  <button type="button" id="BackTop" class="toTop-arrow"></button>
+  <header>
 		<div class="container-fluid navBgColor">
             <ul class="nav  align-items-center">
                 <nav class="navbar  mr-auto" >
-                    <img src="img/陳映彤1.png" class="img-fluid navimg">
+                    <img src="img/logow.png" class="img-fluid navimg">
                 </nav>
                 <li class="nav-item">
                     <a class="nav-link active text-white" href="#aboutme"><h4>個人資訊</h4></a>
@@ -162,7 +27,10 @@
                     <a class="nav-link text-white" href="#school"><h4>學習經歷</h4></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#wish"><h4>目標與期許</h4></a>
+                    <a class="nav-link text-white" href="#club"><h4>社團經驗</h4></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#wish"><h4>目標</h4></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="#life"><h4>生活紀錄</h4></a>
@@ -171,52 +39,60 @@
           </div>
 	</header>
 	<section>
-        <div class="container-flied">
-            <img src="img/121.jpg" class="img-fluid">
+        <div class="container-fluid pr-0 pl-0">
+            <img src="img/1.jpg" class="img-fluid">
         </div>
     </section>
+    <br><br>
     <section>
-        <div class="container-flied pd">
+      <div class="container-fluid">
+          <a  name="aboutme"><h1 style="text-align: center;">個人資訊</h1></a>
+        <div class="container-fluid pd">
             <div class="row table no-gutters">
-                 <div class="col-3">
-                    <img src="img/061.jpg" class="img-fluid myimg img-thumbnail">
+                 <div class="col-xl-3 pic">
+                    <img src="img/myhead.jpg" class="img-fluid myimg img-thumbnail shadow rounded">
                 </div>
-                <div class="col-4 align-self-center">
+                <div class="col-xl-4 align-self-center">
                     <h4 class="text-md-left" >姓名：陳映彤</h4><br>
                     <h4 class="text-md-left">系級：資管二甲</h4><br>
                     <h4 class="text-md-left">興趣：<img src="img/game.png" class="img-fluid icon"> 遊戲、<img src="img/read.png" class="img-fluid icon"> 閱讀、<img src="img/caticon.png" class="img-fluid icon"> 貓咪</h4><br>
-                    <h4 class="text-md-left">大學四年期許：增強程式能力，考取相關證照</h4><br>
+                    <h4 class="text-md-left">大學四年期許：增強程式能力，考相關證照</h4><br>
                 </div>
-                <div class="col-1 bdset">
-                    <img src="img/cat2.png" class="img-fluid" width="200" height="200" style="position: relative; top: 300px">
+                <div class="col-xl-1 bdset">
+                    <img src="img/cat12.png" class="img-fluid" width="100" height="100" style="position: relative; top: 220px">
                 </div>
-                <div class="col-3 align-self-center">
+                <div class="col-xl-3 align-self-center">
                     <aside>
                         <h4>信箱：dicleo0727@gmail.com</h4><br>
                         <h4>電話：0937-311-296</h4><br>
                         <h4>地址：中原大學信實宿舍</h4><br>
                     </aside>
                 </div>
-                <div class="col-1 align-self-center">
-                    <a href="https://www.facebook.com/zoe.chen.727" target="_blank" name="aboutme"><img src="img/fb.png" class="img-fluid navimg"></a><br><br>
+                <div class="col-xl-1 align-self-center">
+                    <a href="https://www.facebook.com/zoe.chen.727" target="_blank"><img src="img/fb.png" class="img-fluid navimg"></a><br><br>
                     <a href="https://www.instagram.com/dicleo727/?hl=zh-tw" target="_blank"><img src="img/ig.png" class="img-fluid navimg"></a><br><br>
                     <a href="https://github.com/dicleo" target="_blank"><img src="img/github.png" class="img-fluid navimg"></a><br><br>
                 </div>
             </div>
         </div>
+      </div>
     </section>
 
     <section>
-        <div class="container-flied pd">
+      <div class="container-fluid">
+        <a name ="school"><h1 style="text-align: center;">學習歷程</h1></a>
+        <div class="container-fluid pd">
           <div class="row table no-gutters">
-          <div class="col-sm">
-              
+          <div class="col-sm align-self-center">
+              <img src="img/cat11.png" class="img-fluid pl-4" height="200" width="200">
           </div>
             <div class="col-sm">
                 <div class="swiper-wrapper timeline">
                   <div class="swiper-slide">
                     <div class="timestamp">
-                      <img src="img/陳映彤.png" class="img-fluid navimg">
+                        <img src="img/lllogo.png" class="img-fluid navimg"
+                        onmouseover="this.src='img/ll.png'" 
+                        onmouseout="this.src='img/lllogo.png'">
                     </div>
                     <div class="status">
                       <span><h4>樂利國小</h4></span>
@@ -224,7 +100,9 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="timestamp">
-                      <img src="img/陳映彤.png" class="img-fluid navimg">
+                        <img src="img/zzlogo.png" class="img-fluid navimg"
+                        onmouseover="this.src='img/zz.png'" 
+                        onmouseout="this.src='img/zzlogo.png'">
                     </div>
                     <div class="status">
                       <span><h4>中正國中</h4></span>
@@ -232,7 +110,9 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="timestamp">
-                      <img src="img/陳映彤.png" class="img-fluid navimg">
+                        <img src="img/KJSHLogo.png" class="img-fluid navimg"
+                        onmouseover="this.src='img/kjsh.png'" 
+                        onmouseout="this.src='img/KJSHLogo.png'">
                     </div>
                     <div class="status">
                       <span><h4>光仁高中</h4></span>
@@ -240,7 +120,9 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="timestamp">
-                      <img src="img/陳映彤.png" class="img-fluid navimg">
+                      <img src="img/cyculogo.png" class="img-fluid navimg"
+                      onmouseover="this.src='img/cycu.png'" 
+                      onmouseout="this.src='img/cyculogo.png'">
                     </div>
                     <div class="status">
                       <span><h4>中原大學</h4></span>
@@ -250,30 +132,106 @@
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
               </div>
-            <div class="col-sm">
-              
+            <div class="col-sm align-self-end">
+                <img src="img/cat10.png" class="img-fluid float-right" height="200" width="200">
             </div>
             </div>
           </div>
         </div>
+      </div>
     </section>
 
-    <section>
-        <div class="container-flied pt-4 pb-4 navBgColor" style="text-align: center; color: white;"><h3>目標:經濟獨立後，養一隻貓！</h3></div>
-        <br>
+  <section>
+      <div class="container-fluid">
+          <a  name="club"><h1 style="text-align: center;">社團經驗</h1></a>
+        <div class="container-fluid pd">
+            <div class="row table">
+              <div class="col-sm-2 align-self-center"><img src="img/zhenglogo.png" class="img-fluid pl-5 pt-3 pb-4"></div>
+              <div class="col-sm-6 align-self-center">
+                <h3>一直對古箏這個樂器有著一些崇景，在上大學之後發現有古箏社的存在，
+                  就毫不猶豫地加入了，在學習古箏的同時，也收穫了許多朋友！</h3>
+              </div>
+              <div class="col-sm-4 align-self-center pic" ><img src="img/zheng.jpg" class="img-fluid radius shadow"></div>
+            </div>
+            <div class="row table">
+                <div class="col-sm-2 align-self-center"><img src="img/twologo.png" class="img-fluid pl-5 pt-3 pb-4"></div>
+                <div class="col-sm-6 align-self-center">
+                  <h3>當初因為對二創方面感興趣，所以就加入了二創社。社團的成員之間有大致相同的愛好，所以之間常常互相推坑、探討，在這之中也認識了許多同好。</h3>
+                </div>
+                <div class="col-sm-4 align-self-center pic" ><img src="img/two.jpg" class="img-fluid radius shadow"></div>
+              </div>
+        </div>
+      </div>
     </section>
+
+  <section>
+
+      <a name="wish">
+        <div class="container-fluid navBgColor" style="text-align: center; color: white;">
+          <div class="row">
+              <div class="col-sm"><img src="img/cat3.png" class="img-fluid" width="250" height="250"></div>
+              <div class="col-sm align-self-center">
+                <div class="half"><h3>目標：經濟獨立後</h3></div>
+                <br><br>
+                <div class="half"><img src="img/catlogow.png" class="img-fluid" width="500"></div>
+              </div>
+              <div class="col-sm"><img src="img/cat1.png" class="img-fluid" width="250" height="250"></div>
+          </div>
+        </div>
+      </a>
+      <br>
+  </section>
+
+  <section>
+      <div class="container-fluid">
+          <a  name="life"><h1 style="text-align: center;">生活紀錄</h1></a>
+        <div class="container-fluid pd">
+            <div class="row table">
+              <div class="col-md-3 align-self-center pic"><img src="img/p1.jpg" class="img-fluid plongimg radius"></div>
+              <div class="col-md-3 align-self-center">
+                  <div class="half align-self-center pic"><img src="img/p2.jpg" class="img-fluid pwidthimg pt-2 radius"></div>
+                  <br>
+                  <div class="half align-self-center pic"><img src="img/p3.jpg" class="img-fluid pwidthimg pb-2 radius"></div>
+              </div>
+              <div class="col-md-3 align-self-center">
+                  <div class="half align-self-center pic"><img src="img/p4.jpg" class="img-fluid pwidthimg pt-2 radius"></div>
+                  <br>
+                  <div class="half align-self-center pic"><img src="img/p5.jpg" class="img-fluid pwidthimg pb-2 radius"></div>
+              </div>
+              <div class="col-md-3 align-self-center pic"><img src="img/p6.jpg" class="img-fluid plongimg radius"></div>
+            </div>
+        </div>
+      </div>
+  </section>
 
 	<footer>
-		<div class="container-flied footerbgcolor pt-3 pb-2" >
-            <h5>@2019陳映彤</h5>
+		<div class="container-fluid footerbgcolor pt-3 pb-2" >
+            <h4>@2019陳映彤</h4>
+            <a href='https://pngtree.com/' class="text-white">圖片來源：pngtree.com</a>
         </div>
 	</footer>
 
+ 
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
+    <script>
+    $(function(){
+      $('#BackTop').click(function(){ 
+        $('html,body').animate({scrollTop:0}, 333);
+      });
+      $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300 ){
+          $('#BackTop').fadeIn(222);
+        } else {
+          $('#BackTop').stop().fadeOut(222);
+        }
+      }).scroll();
+    });
+    </script>  
 </body>
 </html>
