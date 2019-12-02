@@ -14,8 +14,8 @@ body {
 
 
 .logosize{
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 50px;
 }
 
 /* 關於茶CSS */
@@ -81,6 +81,21 @@ body {
 }
 /* 商品頁 商品 留言區css END */
 
+/* 下拉式選單CSS */
+.downbtn {
+  background-color: none; /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.downbtn:hover {
+  background-color: cadetblue;
+}
+/* 下拉式選單CSS END*/
 
 /* 熱銷商品CSS */
 #timeline {
