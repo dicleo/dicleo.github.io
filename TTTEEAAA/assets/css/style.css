@@ -18,6 +18,8 @@ body {
     height: 50px;
 }
 
+
+
 /* 關於茶CSS */
 .A{
         position: center center;
@@ -78,6 +80,10 @@ body {
 }
 .textwidth{
     width: 90%;
+}
+.bcenter{
+  text-align: right;
+  padding: 10px;
 }
 /* 商品頁 商品 留言區css END */
 

@@ -15,7 +15,7 @@ for(var i=0;i<imgArray.length;i++){
    imgArray[i].onclick=function(){
     if(obj.rateFlag) return;
     obj.rateFlag=true;
-    alert(this._num+1);       //this._num+1這個數字寫入到數據庫中,作為評分的依據
+    //alert(this._num+1);       //this._num+1這個數字寫入到數據庫中,作為評分的依據
    };
 }
 if(target.tagName=="IMG"){
