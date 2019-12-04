@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>useredit</title>
+    <title>user</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Source+Sans+Pro:400" rel="stylesheet">
@@ -43,7 +43,7 @@
         <div class="container-fluid bg-info">
                 <ul class="nav nav-fill">
                   <li class="nav-item">
-                    <a class="nav-link active text-white" href="index.html#HOT"><h4>熱銷商品</h4></a>
+                    <a class="nav-link active text-white" href="#HOT"><h4>熱銷商品</h4></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active text-white" href="abouttea.html"><h4>關於茶</h4></a>
@@ -63,8 +63,32 @@
                 </ul>
               </div>
     </header>
-    	<div class="A">
-    	<form method="post" action=""><center><h5>編輯個人資料</h5><br>
+
+    <aside>
+        <div class="container-fluid pt-3">
+            <ul class="nav flex-column navbar-sm">
+                <li class="nav-item">
+                    <a href="#useredit" class="text-dark"><h5>編輯個人資料</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#baught" class="text-dark"><h5>購物紀錄</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#comment" class="text-dark"><h5>評論紀錄</h5></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#love" class="text-dark"><h5>我的收藏</h5></a>
+                </li>
+            </ul>
+            
+        </div>
+    </aside>
+<section>
+    	<div class="A mt-1">
+    	<form method="post" action="">
+        <a name="useredit">
+          <center>
+            <h5>編輯個人資料</h5><br>
     		<div class="B">
     		<br>&nbsp&nbsp&nbsp&nbsp舊密碼：<input type="text" name="username" size="20" ><br>
     		&nbsp&nbsp&nbsp&nbsp新密碼：<input type="password" name="password" size="20" ><br>
@@ -76,8 +100,104 @@
 			</div>
 		</center>
     	</form> 
+    </a>
 		</div>
-   
+    <hr>
+
+    <div class="pt-3 pb-3 pl-3 pr-3">
+      <a name="baught">
+      <center>
+        <h4>購物紀錄</h4>
+      <table>
+        <tr>
+          <td><img src="img/good9.jpg" width="100px"></td>
+          <td>名稱:魚池紅玉紅茶</td>
+          <td>數量:1</td>
+          <td>價錢:100</td>
+          <td>日期:2019/12/1</td>
+        </tr>
+        <tr>
+          <td><img src="img/good7.jpg" width="100px"></td>
+          <td>名稱:粉玫瑰花茶</td>
+          <td>數量:1</td>
+          <td>價錢:100</td>
+          <td>日期:2019/12/2</td>
+        </tr>
+        <tr>
+          <td><img src="img/good4.jpg" width="100px"></td>
+          <td>名稱:薄荷康福茶</td>
+          <td>數量:1</td>
+          <td>價錢:100</td>
+          <td>日期:2019/12/3</td>
+        </tr>
+      </table>
+      </center>
+    </a>
+    </div>
+      <hr>
+
+    <div>
+      <a name="comment">
+      <center>
+        <h4>評論紀錄</h4>
+     <div class="row">
+                <div class="col-sm-1  align-items-center">
+                    <img src="img/good2.jpg" class="img-fluid ml-5" width="100">
+                </div>
+                <div class="col-sm">
+                    <div class="border-light rounded shadow-sm bg-white mt-3 pt-3 pb-3 pl-3 pr-3 textwidth">
+                        <h5>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+     <div class="row">
+                <div class="col-sm-1  align-items-center">
+                    <img src="img/good5.jpg" class="img-fluid ml-5" width="100">
+                </div>
+                <div class="col-sm">
+                    <div class="border-light rounded shadow-sm bg-white mt-3 pt-3 pb-3 pl-3 pr-3 textwidth">
+                        <h5>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</h5>
+                    </div>
+                </div>
+            </div>
+      </center>
+      </a>
+    </div>
+    <hr>
+
+    <div>
+      <a name="love">
+      <center>
+        <h4>我的收藏</h4>
+      <table>
+        <tr>
+          <td><img src="img/good9.jpg" width="100px"></td>
+          <td><a href="good9.html">名稱:魚池紅玉紅茶</a></td>
+          <td><button type="button" class="btn btn-outline-danger ">刪除</button></td>
+        </tr>
+        <tr>
+          <td><img src="img/good7.jpg" width="100px"></td>
+          <td> <a href="good7.html">名稱:粉玫瑰花茶</a></td>
+          <td><button type="button" class="btn btn-outline-danger ">刪除</button></td>
+        </tr>
+        <tr>
+          <td><img src="img/good4.jpg" width="100px"></td>
+          <td><a href="good4.html">名稱:薄荷康福茶</a></td>
+          <td><button type="button" class="btn btn-outline-danger ">刪除</button></td>
+        </tr>
+        <tr>
+          <td><img src="img/good1.jpg" width="100px"></td>
+          <td><a href="good1.html">名稱:愛爾蘭奶油紅茶</a></td>
+          <td><button type="button" class="btn btn-outline-danger ">刪除</button></td>
+        </tr>
+      </table>
+      </center>
+      </a>
+    </div>
+
+</section>
+
     <footer>
         <br>
             <div class="container-fluid text-center pt-3 pb-2 bg-info" >
