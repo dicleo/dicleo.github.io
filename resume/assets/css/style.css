@@ -76,6 +76,10 @@ footer{
 .ptset{
   padding-top: 30px;
 }
+.navimg{
+  height: 75px;
+  width: 75px;
+}
 /* 滑鼠移過去放大 設定 */
 .pic{overflow:hidden;}
 .pic img{transform:scale(1,1);transition: all 1s ease-out;}
@@ -87,7 +91,7 @@ footer{
 /* 滑鼠移過去變色 */
 .basicsl:hover{
     border-radius:10px;
-    color: blue;
+    color: darkcyan;
     background-color: rgba(189,192, 186, 70%);
     transition: all .5s;
 }
