@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>個人履歷</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- 其他 -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/circlebar.css">
+
+
+    <script src="assets/js/bar.js"></script>
+
+  </head>
+  <body background="img/bg.jpg" onload="Cmove();C1move();javamove();hcjmove();">
+    <button type="button" id="BackTop" class="toTop-arrow"></button>
+    <section>
+        <div class="container brset mt-5 bg-white">
+            <div class="row">
+                <div class="col-sm-4 center">
+                      <div class="pic mt-3 mb-3 rads">
+                          <img src="img/myhead.jpg" class="head img-fluid">
+                      </div>
+
+                  
+                    <a href="https://dicleo.github.io/myweb/" target="_blank" class="btn btn-outline-dark btn-lg btn-block" role="button">關於我...</a>
+                    <br>
+                </div>
+                <div class="col-sm-4 align-self-center center">
+                  <h3 style="color: darkcyan;" class="pb-3">陳映彤 Ying-Tung Chen</h3>
+                  <h5 class="pb-3">中原大學 資訊管理系</h5>
+                  <p class="sl basicsl ">「生命之燈因熱情而點燃，
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    生命之舟因拼搏而前行。」</p>
+                </div>
+                <div class="col-sm-4">
+                  <br>
+                  <div class="row">
+                      <img src="img/t1.png" class="img-fluid title">
+                  </div>
+                  <div class="row">
+                    <div class="col-sm">
+                      <!-- Word -->
+                      <h5 >Word</h5>
+                      <div class="circle">
+                          <div class="circle_left1">
+                              <div class="clip_left1"></div>
+                          </div>
+                          <div class="circle_right1">
+                              <div class="clip_right1"></div>
+                          </div>
+                          <div class="mask1">
+                              <span>85</span>%
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-sm">
+                        <h5>影片剪輯</h5>
+                        <!-- 威力導演 -->
+                        <div class="circle">
+                            <div class="circle_left2">
+                                <div class="clip_left2"></div>
+                            </div>
+                            <div class="circle_right2">
+                                <div class="clip_right2"></div>
+                            </div>
+                            <div class="mask2">
+                                <span>65</span>%
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="row">
+                    <div class="col-sm">
+                      <h5>專案管理</h5>
+                      <!-- 專案管理 -->
+                      <div class="circle">
+                          <div class="circle_left3">
+                              <div class="clip_left3"></div>
+                          </div>
+                          <div class="circle_right3">
+                              <div class="clip_right3"></div>
+                          </div>
+                          <div class="mask3">
+                              <span>80</span>%
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-sm">
+                      <h5>前端網頁設計</h5>
+                      <!-- 前端網頁設計 -->
+                      <div class="circle">
+                          <div class="circle_left4">
+                              <div class="clip_left4"></div>
+                          </div>
+                          <div class="circle_right4">
+                              <div class="clip_right4"></div>
+                          </div>
+                          <div class="mask4">
+                              <span>90</span>%
+                          </div>
+                      </div>
+                      <br>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="container">
+            <br>
+            <img src="img/pgtitle.png" class="img-fluid title">
+            <br><br>
+        </div>
+        <div class="container brset bg-white">
+
+          <div class="row pbset ptset">
+              <div class="col-sm-1 center"><img src="img/C.png" class="icon img-fluid"></div>
+              <div class="col-sm">
+                  <div id="CProgress" class="progress">
+                      <div id="CBar" class="progress-bar progress-bar-striped progress-bar-animated">
+                        <div id="Clabel">0%</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row pbset">
+              <div class="col-sm-1 center"><img src="img/C1.png" class="icon img-fluid"></div>
+              <div class="col-sm">
+                  <div id="C1Progress" class="progress">
+                      <div id="C1Bar" class="progress-bar progress-bar-striped progress-bar-animated">
+                        <div id="C1label">0%</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row pbset">
+              <div class="col-sm-1 center"><img src="img/java.png" class="icon img-fluid"></div>
+              <div class="col-sm">
+                  <div id="javaProgress" class="progress">
+                      <div id="javaBar" class="progress-bar progress-bar-striped progress-bar-animated">
+                        <div id="javalabel">0%</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row pbset">
+              <div class="col-sm-1 center"><img src="img/HCJ.png" class="icon img-fluid"></div>
+              <div class="col-sm">
+                  <div id="hcjProgress" class="progress">
+                      <div id="hcjBar" class="progress-bar progress-bar-striped progress-bar-animated">
+                        <div id="hcjlabel">0%</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+    <section>
+        <div class="container">
+          <div class="row">
+              <img src="img/ex1.png" class="img-fluid title">
+          </div>
+          <div class="row">
+              <div class="card-group">
+                  <div class="card pic">
+                    <img src="img/01.jpg" class="card-img-top cardsize" >
+                    <div class="card-body basic">
+                      <h5 class="card-text cardtiltleset">好膽賣皂</h5>
+                      <p class="card-text cardotherset">--台灣肯納基金會</p>
+                      <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModalLong">
+                      了解更多...  </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">企業概論</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                  <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F355094608399633%2Fvideos%2F1981804185447599%2F&show_text=0&width=560" width="450" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                                  <h5>心得:</h5>
+                                  <h5>做完專案之後回顧，我才發現原來我已經跨越了很多在剛開學時，我覺得我做不到的事情，這讓我想起了很多人曾經說過「做就對了，做了才有可能發現事情沒有那麼難」，我必須承認，這句話是對的，做了才發現其實沒有那麼痛苦，雖然過程中遇到了很多困難，但在一次次度過困難的同時，我們也不停的在成長。</h5>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-dismiss="modal">確認</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card pic">
+                    <img src="img/02.jpg" class="card-img-top cardsize">
+                    <div class="card-body basic ">
+                      <h5 class="card-text cardtiltleset">愛資味好ㄘ</h5>
+                      <p class="card-text cardotherset">--愛鄰舍協會</p>
+                      <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#twoModalLong">
+                          了解更多...  </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="twoModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="twoModalLongTitle">管理學</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <img src="img/022.jpg" class="img-fluid" width="450" height="315">
+                                      <h5>心得:</h5>
+                                      <h5>這次的管理學專案我們前往愛鄰舍教導小朋友的課業，我覺得最大的挑戰是有些在我們看來理所當然的計算或概念，對於那些小朋友來說卻是第一次接觸，並且還不太瞭解，所以我們需要盡量用簡單的辭彙跟方法解釋，讓他們可以理解，如果第一種講法他們聽不懂，就要一直換講法講到他們能理解為止，這其實有一些難度，也考驗我們的應變能力。專案結束後我覺得更了解了為什麼管理者要去關懷社會，又要怎麼關懷社會。</h5>
+                                  </div>
+                                  <div class="modal-footer">
+                                        <button type="button" class="btn btn-dark" data-dismiss="modal">確認</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="card pic">
+                    <img src="img/03.JPG" class="card-img-top cardsize">
+                    <div class="card-body basic">
+                      <h5 class="card-text cardtiltleset">中原大學快樂通識手冊</h5>
+                      <p class="card-text cardotherset">--多媒體程式設計期中專案</p>
+                      <button type="button" class="btn btn-dark btn-block" data-toggle="modal" data-target="#threeModalLong">
+                          了解更多...  </button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="threeModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="threeModalLongTitle">多媒體程式設計</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <iframe width="450" height="315" src="https://www.youtube.com/embed/UHRfARTK9z4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                      <h5>心得:</h5>
+                                      <h5>這次的期中專案讓我學到很多，因為有很多東西不太懂，所以在寫的過程會邊查邊寫，不知不覺一個小時、兩個小時就過去了，時間在此時似乎顯得一點都不值錢。網站完成後回頭看還沒開始做網站的自己，發現自己成長了不少，同時也覺得很有成就感，感謝隊友們讓這個網站可以順利的完成</h5>
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-dark" data-dismiss="modal">確認</button>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <br>
+    </section>
+
+  </section>
+      <div class="container">
+        <img src="img/club.png" class="img-fluid title">
+        <div class="row basic brset  no-gutters mt-2 mb-3">
+          <div class="col-sm-7 align-self-center">
+            <h4 class="clubpad">於大一時曾參與古箏社的期末成果發表，與社團的朋友們一同展現辛苦練習許久的成果，在表演中我負責了「阿美族舞曲」、「大魚」、「雪落下的聲音」這三首歌曲的合奏，這次的經驗讓我了解了團隊合作的重要性，只有各聲部能互相配合，才能有完美和諧的樂音產生。</h4>
+          </div>
+          <div class="col-sm-5">
+              <img src="img/club1.jpg" class="clubimg img-fluid"
+				    	onmouseover="this.src='img/club2.jpg'" 
+				    	onmouseout="this.src='img/club1.jpg'">
+          </div>
+        </div>
+      </div>
+  <section>
+	<footer>
+		<div class="container-fluid pt-3 pb-2" >
+            <h4>Copyright &copy 2019 by Ying-Tung Chen</h4>
+            <a href='https://pngtree.com/' class="text-white">圖片素材：pngtree.com</a>
+        </div>
+	</footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!-- jQuery(gotop) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/gotop.js"></script>
+
+    <script src="assets/js/circlebar.js"></script>
+  </body>
+</html>

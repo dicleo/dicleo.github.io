@@ -1,0 +1,229 @@
+body,button, input,select, textarea,h1 ,h2, h3, h4, h5, h6 { 
+    font-family:"微軟正黑體","Microsoft JhengHei";
+}
+
+body{
+    font-family: "微軟正黑體","Microsoft JhengHei";
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: #535953;
+}
+.cardtiltleset{
+  text-align: center;
+  font-size: 30px;
+  font-weight: initial;
+}
+.cardsize{
+    height:250px ;
+}
+.cardotherset{
+  text-align: right;
+  font-size: 20px;
+}
+.test{
+  border-right: 5px solid;
+  border-right-style: dashed;
+  border-right-color:darkcyan;
+}
+.center{
+  text-align: center;
+}
+.brset{
+  border: #555555 solid 5px;
+  border-radius: 30px;
+}
+.head{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+.rads{
+  border-radius: 100%;
+}
+
+.sl{
+  font-family: "微軟正黑體";
+  font-size: 23px;
+}
+
+.title{
+  height: 100px;
+  width: 200px;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+}
+.clubimg{
+  border-radius: 25px;
+  height: 300px;
+  width: 500px;
+}
+.clubpad{
+  padding: 30px;
+}
+.pbset{
+  padding-bottom: 30px;
+}
+.ptset{
+  padding-top: 30px;
+}
+/* 滑鼠移過去放大 設定 */
+.pic{overflow:hidden;}
+.pic img{transform:scale(1,1);transition: all 1s ease-out;}
+.pic img:hover{
+    transform:scale(1.2,1.2);
+    border-radius: 20px;
+}
+
+/* 滑鼠移過去變色 */
+.basicsl:hover{
+    border-radius:10px;
+    color: blue;
+    background-color: rgba(189,192, 186, 70%);
+    transition: all .5s;
+}
+.basic{
+  background: white;
+}
+.basic:hover{
+  background-color: rgba(189,192, 186, 70%);
+  transition: all .5s;
+}
+
+/* 回到最頂 */
+.toTop-arrow {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 33%;
+    opacity: 0.6;
+    background: #000;
+    cursor: pointer;
+    position:fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+  }
+  .toTop-arrow::before, .toTop-arrow::after {
+    width: 25px;
+    height: 6px;
+    border-radius: 3px;
+    background: #86A697;
+    position: absolute;
+    content: "";
+  }
+  .toTop-arrow::before {
+    transform: rotate(-45deg) translate(0, -50%);
+    left: 0.42rem;
+  }
+  .toTop-arrow::after {
+    transform: rotate(45deg) translate(0, -50%);
+    right: 0.42rem;
+  }
+  .toTop-arrow:focus {outline: none;}
+
+  /* 進度條 */
+#CProgress {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #ddd;
+}
+
+#CBar {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background-color: #86A697;
+}
+
+#Clabel {
+  padding-left: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: initial;
+  color: white;
+}
+
+#C1Progress {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #ddd;
+}
+
+#C1Bar {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background-color: #86A697;
+}
+
+#C1label {
+  padding-left: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: initial;
+  color: white;
+}
+
+#javaProgress {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #ddd;
+}
+
+#javaBar {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background-color: #86A697;
+}
+
+#javalabel {
+  padding-left: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: initial;
+  color: white;
+}
+#hcjProgress {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #ddd;
+}
+
+#hcjBar {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  background-color: #86A697;
+}
+
+#hcjlabel {
+  padding-left: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: initial;
+  color: white;
+}
