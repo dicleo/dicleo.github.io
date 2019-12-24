@@ -173,73 +173,13 @@
                           </ul>
                           <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                    <div class="row pt-2 pb-2 pl-5 pr-5">
-                                            <button type="button" class="btn btn-outline-info btn-block" data-toggle="modal" data-target="#addfeedback">
-                                                我想評論
-                                            </button>
-                                        </div>
-                                            <div class="modal fade" id="addfeedback" tabindex="-1" role="dialog" aria-labelledby="addfeedback" aria-hidden="true">
-                                                    <div class="modal-dialog modal-lg" role="document">
-                                                      <div class="modal-content">
-                                                        <div class="modal-header">
-                                                          <h5 class="modal-title" id="addfeedback">商品評論</h5>
-                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                          </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                          <div class="conrainte-fluid">
-                                                              <!-- 品名與照片 -->
-                                                              <div class="row align-items-center">
-                                                                <div class="col-sm-3">
-                                                                    <img src="img/good6.png" class="img-fluid" width="50" height="50">
-                                                                </div>
-                                                                <div class="col-sm ">
-                                                                    <h4>沁涼薄荷紅茶</h4>
-                                                                </div>
-                                                              </div>
-                                                              <hr>
-                                                              <!-- 品名與照片 結束 -->
-
-                                                              <!-- 表單開始 -->
-                                                              <form class="was-validated" method="POST">
-                                                                <div class="row">
-                                                                    <div class="col-sm">
-                                                                            暱稱：<input type="text" class="form-control is-invalid" required>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                        <div class="col-sm" style="text-align: center;">
-                                                                            <br>
-                                                                            <p style="text-align: left;">幫商品評個分：</p>
-                                                                                <p class="starWrapper" onmouseover="rate(this,event)">
-                                                                                <img src="img/nstar.png" title="很爛" />
-                                                                                <img src="img/nstar.png" title="一般" />
-                                                                                <img src="img/nstar.png" title="還好" />
-                                                                                <img src="img/nstar.png" title="較好" />
-                                                                                <img src="img/nstar.png" title="很好" />
-                                                                        </div>
-                                                                </div>
-                                                                <div class="row pl-3 pr-3">
-                                                                        商品評論：<textarea class="form-control is-invalid" wrap="hard" rows="3" required></textarea>
-                                                                </div>
-                                                          </div>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-                                                          <button type="submit" class="btn btn-primary">確定評價</button>
-                                                        </div>
-                                                    </form>
-                                                    <!-- 表單結束 -->
-                                                    </div>
-                                                </div>  
-                                        </div>
+                                <br>
                                         <div class="row">
                                             <div class="col-sm-1  align-items-center">
                                                 <img src="img/good6.png" class="img-fluid" height="75" width="75">
                                             </div>
                                             <div class="col-sm">
-                                                <p class="text-secondary"><span class="text-info">XXX</span>評價此商品</p>
+                                                <p class="text-secondary"><span class="text-info">XXX</span>評價此商品：<span class="text-info">5</span>星</p>
                                                 <div class="border-light rounded shadow-sm bg-white pt-3 pb-3 pl-3 pr-3 textwidth">
                                                     <p>留言:</p>
                                                     <h5>777777777</h5>
@@ -252,7 +192,7 @@
                                                 <img src="img/good6.png" class="img-fluid" height="75" width="75">
                                             </div>
                                             <div class="col-sm">
-                                                <p class="text-secondary"><span class="text-info">OOO</span>評價此商品</p>
+                                                <p class="text-secondary"><span class="text-info">OOO</span>評價此商品：<span class="text-info">4</span>星</p>
                                                 <div class="border-light rounded shadow-sm bg-white pt-3 pb-3 pl-3 pr-3 textwidth">
                                                     <p>留言:</p>
                                                     <h5>哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</h5>
@@ -336,6 +276,7 @@
     <footer>
             <div class="container-fluid text-center pt-3 pb-2 T" >
                 <h4>Copyright &copy 2019 by 第十組</h4>
+                <h5>訪客人數 <span>0</span>人</h5>
             </div>
     </footer>
 
